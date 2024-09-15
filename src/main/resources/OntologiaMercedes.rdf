@@ -1,0 +1,910 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9/"
+     xml:base="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-9="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#engineHasPower -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#engineHasPower"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasEngine -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasEngine">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isEngineOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Engine"/>
+        <rdfs:comment>Collega un&apos;auto al motore che utilizza.</rdfs:comment>
+        <rdfs:label>has Engine</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasExterior -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasExterior">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isExteriorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Exterior"/>
+        <rdfs:comment>Collega un&apos;auto alla parte esterna, inclusi componenti come cerchi, fari e vernice.</rdfs:comment>
+        <rdfs:label>has Exterior</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasInterior -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasInterior">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isInteriorOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Interior"/>
+        <rdfs:comment>Collega un&apos;auto alla parte interna, come sedili, volante e rivestimenti.</rdfs:comment>
+        <rdfs:label>has Interior</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasOptional -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasOptional">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isOptionalOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Optional"/>
+        <rdfs:comment>Collega un&apos;auto agli optional disponibili.</rdfs:comment>
+        <rdfs:label>has Optional</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasTransmission -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasTransmission">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isTransmissionOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Transmission"/>
+        <rdfs:comment>Collega un&apos;auto al suo tipo di cambio, come automatico o manuale.</rdfs:comment>
+        <rdfs:label>has Transmission</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isEngineOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isEngineOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Engine"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:comment>Collega un motore al concetto di auto in generale.</rdfs:comment>
+        <rdfs:label>is Engine of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isExteriorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isExteriorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Exterior"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:comment>Collega la parte esterna di un&apos;auto al concetto di auto in generale.</rdfs:comment>
+        <rdfs:label>is Exterior of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isInteriorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isInteriorOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Interior"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:comment>Collega la parte interna di un&apos;auto al concetto di auto in generale.</rdfs:comment>
+        <rdfs:label>is Interior of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isOptionalOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isOptionalOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Optional"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:comment>Collega gli optional dell&apos;auto al concetto di auto in generale.</rdfs:comment>
+        <rdfs:label>is Optional of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isTransmissionOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#isTransmissionOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Transmission"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:comment>Collega un cambio al concetto di auto in generale.</rdfs:comment>
+        <rdfs:label>is Transmission of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#engineHasModel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#engineHasModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Engine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasAmbientLighting -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasAmbientLighting">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Ambient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasDiameter -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasDiameter">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Wheels"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasDrivingAssistantType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasDrivingAssistantType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#DrivingAssistant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasEnginePower -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasEnginePower">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Engine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasFuelConsumption -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasFuelConsumption">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Engine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasHeadlightModel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasHeadlightModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Headlights"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasPaintColor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasPaintColor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Paint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasPaintModel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasPaintModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Paint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasPaintType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasPaintType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Paint"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasSafetyPackage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasSafetyPackage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Safety"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasSeatOptional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasSeatOptional">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Seats"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasSteeringWheelOptional -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasSteeringWheelOptional">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SteeringWheel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasTransmissionType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasTransmissionType">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Transmission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasUpholsteryColor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasUpholsteryColor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Upholstery"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasUpholsteryMaterial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasUpholsteryMaterial">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Upholstery"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasWheelModel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#hasWheelModel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Wheels"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Ambient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Ambient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Interior"/>
+        <rdfs:comment>Rappresenta l&apos;abitacolo dell&apos;auto, che può cambiare di illuminazione.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car">
+        <rdfs:comment xml:lang="it">La classe principale dell&apos;ontologia, che rappresenta un&apos;automobile come entità complessiva.</rdfs:comment>
+        <rdfs:label xml:lang="it">Car</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#DrivingAssistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#DrivingAssistant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Optional"/>
+        <rdfs:comment xml:lang="it">Rappresenta i sistemi di assistenza alla guida, come il cruise control adattivo o l&apos;assistente di parcheggio.</rdfs:comment>
+        <rdfs:label xml:lang="it">Driving Assistant</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Engine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:comment xml:lang="it">Rappresenta il modello del motore dell&apos;auto.</rdfs:comment>
+        <rdfs:label xml:lang="it">Engine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Exterior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Exterior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Interior"/>
+        <rdfs:comment xml:lang="it">La classe che rappresenta gli elementi esterni dell&apos;auto, come vernice, fari e cerchi.</rdfs:comment>
+        <rdfs:label xml:lang="it">Exterior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Headlights -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Headlights">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Exterior"/>
+        <rdfs:comment xml:lang="it">La classe che rappresenta i fari dell&apos;auto, compresi i fari anteriori e posteriori.</rdfs:comment>
+        <rdfs:label xml:lang="it">Headlights</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Interior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Interior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:comment xml:lang="it">La classe che rappresenta gli interni dell&apos;auto, inclusi sedili, volante e rivestimenti.</rdfs:comment>
+        <rdfs:label xml:lang="it">Interior</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Optional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Optional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:comment xml:lang="it">Rappresenta gli optional aggiuntivi disponibili per un&apos;auto, come pacchetti di sicurezza e assistenza alla guida.</rdfs:comment>
+        <rdfs:label xml:lang="it">Optional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Paint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Paint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Exterior"/>
+        <rdfs:comment xml:lang="it">La classe che rappresenta la vernice dell&apos;auto, compresa la tipologia (es. metallizzata, opaca) e il colore.</rdfs:comment>
+        <rdfs:label xml:lang="it">Paint</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Safety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Safety">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Optional"/>
+        <rdfs:comment xml:lang="it">Rappresenta i sistemi di sicurezza dell&apos;auto, come gli airbag o estintore.</rdfs:comment>
+        <rdfs:label xml:lang="it">Safety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Seats -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Seats">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Interior"/>
+        <rdfs:comment xml:lang="it">Rappresenta i sedili dell&apos;auto, che possono variare per optional.</rdfs:comment>
+        <rdfs:label xml:lang="it">Seats</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SteeringWheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SteeringWheel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Interior"/>
+        <rdfs:comment xml:lang="it">Rappresenta il volante dell&apos;auto, che può essere in vari materiali e optional.</rdfs:comment>
+        <rdfs:label xml:lang="it">Steering Wheel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Transmission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Transmission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <rdfs:comment xml:lang="it">Rappresenta il tipo di cambio dell&apos;auto, come manuale o automatico.</rdfs:comment>
+        <rdfs:label xml:lang="it">Transmission</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Upholstery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Upholstery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Interior"/>
+        <rdfs:comment xml:lang="it">Rappresenta i materiali di rivestimento interni dell&apos;auto.</rdfs:comment>
+        <rdfs:label xml:lang="it">Upholstery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Wheels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Wheels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Exterior"/>
+        <rdfs:comment xml:lang="it">La classe che rappresenta i cerchi delle ruote dell&apos;auto, come quelli in lega o acciaio.</rdfs:comment>
+        <rdfs:label xml:lang="it">Wheels</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#AU-105 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#AU-105">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Upholstery"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasUpholsteryColor>Beige latte macchiato</untitled-ontology-9:hasUpholsteryColor>
+        <untitled-ontology-9:hasUpholsteryMaterial>Pelle e imitazione pelle ARTIC</untitled-ontology-9:hasUpholsteryMaterial>
+        <rdfs:comment>Materiale di pelle configurabile</rdfs:comment>
+        <rdfs:label>AU-105</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#AU-201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#AU-201">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Upholstery"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasPaintColor>Pelle nera</untitled-ontology-9:hasPaintColor>
+        <untitled-ontology-9:hasUpholsteryMaterial>Pelle</untitled-ontology-9:hasUpholsteryMaterial>
+        <rdfs:comment>Colore della pelle dei rivestimenti selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>AU-201</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#AU-804 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#AU-804">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Upholstery"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasUpholsteryMaterial>Pelle nappa</untitled-ontology-9:hasUpholsteryMaterial>
+        <rdfs:comment>Colore della pelle nappa dei rivestimenti selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>AU-804</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#C220d -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#C220d">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Engine"/>
+        <untitled-ontology-9:isEngineOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:engineHasModel>C 220 d</untitled-ontology-9:engineHasModel>
+        <untitled-ontology-9:hasEnginePower>147kW + 15 kW (200CV)</untitled-ontology-9:hasEnginePower>
+        <untitled-ontology-9:hasFuelConsumption>4,6 l/100km</untitled-ontology-9:hasFuelConsumption>
+        <rdfs:comment>Modello motore che si opuò scegliere nella configurazione</rdfs:comment>
+        <rdfs:label>C 220 d</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#C300e4MATICibridaEQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#C300e4MATICibridaEQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Engine"/>
+        <untitled-ontology-9:isEngineOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:engineHasModel>C 300 e 4MATIC ibrida EQ</untitled-ontology-9:engineHasModel>
+        <untitled-ontology-9:hasEnginePower>150kW + 95 kW (204CV + 129CV)</untitled-ontology-9:hasEnginePower>
+        <untitled-ontology-9:hasFuelConsumption>20,3 kWh/100km</untitled-ontology-9:hasFuelConsumption>
+        <rdfs:comment>Modello motore ibrido che si opuò scegliere nella configurazione</rdfs:comment>
+        <rdfs:label>C 300 e 4MATIC ibrida EQ</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Car"/>
+        <untitled-ontology-9:hasEngine rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#C220d"/>
+        <untitled-ontology-9:hasEngine rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#C300e4MATICibridaEQ"/>
+        <untitled-ontology-9:hasExterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#LU-149"/>
+        <untitled-ontology-9:hasExterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#LU-197"/>
+        <untitled-ontology-9:hasExterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#LU-993"/>
+        <untitled-ontology-9:hasExterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#PC-P35"/>
+        <untitled-ontology-9:hasExterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-632"/>
+        <untitled-ontology-9:hasExterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-R15"/>
+        <untitled-ontology-9:hasExterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-R32"/>
+        <untitled-ontology-9:hasExterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-R87"/>
+        <untitled-ontology-9:hasInterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#AU-105"/>
+        <untitled-ontology-9:hasInterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#AU-201"/>
+        <untitled-ontology-9:hasInterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-399"/>
+        <untitled-ontology-9:hasInterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-401"/>
+        <untitled-ontology-9:hasInterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-443"/>
+        <untitled-ontology-9:hasInterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-872"/>
+        <untitled-ontology-9:hasInterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-873"/>
+        <untitled-ontology-9:hasInterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-891"/>
+        <untitled-ontology-9:hasInterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-894"/>
+        <untitled-ontology-9:hasInterior rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-L3M"/>
+        <untitled-ontology-9:hasOptional rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#PC-P20"/>
+        <untitled-ontology-9:hasOptional rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#PC-PBH"/>
+        <untitled-ontology-9:hasOptional rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-513"/>
+        <untitled-ontology-9:hasOptional rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-628"/>
+        <untitled-ontology-9:hasOptional rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SP-111"/>
+        <untitled-ontology-9:hasOptional rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SP-222"/>
+        <untitled-ontology-9:hasOptional rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SP-333"/>
+        <untitled-ontology-9:hasTransmission rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#cambio_automatico"/>
+        <untitled-ontology-9:hasTransmission rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#cambio_manuale"/>
+        <rdfs:comment>Modello della macchina che si sta configurando</rdfs:comment>
+        <rdfs:label>Classe G Berlina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#LU-149 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#LU-149">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Paint"/>
+        <untitled-ontology-9:isExteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasPaintColor>Bianco Polare</untitled-ontology-9:hasPaintColor>
+        <untitled-ontology-9:hasPaintModel>LU-149</untitled-ontology-9:hasPaintModel>
+        <untitled-ontology-9:hasPaintType>Pastello</untitled-ontology-9:hasPaintType>
+        <rdfs:comment>Tipologia di vernice selezionabile nella configurazione.</rdfs:comment>
+        <rdfs:label>LU-149</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#LU-197 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#LU-197">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Paint"/>
+        <untitled-ontology-9:isExteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasPaintColor>Nero Ossidiana</untitled-ontology-9:hasPaintColor>
+        <untitled-ontology-9:hasPaintModel>LU-197</untitled-ontology-9:hasPaintModel>
+        <untitled-ontology-9:hasPaintType>metallizzato</untitled-ontology-9:hasPaintType>
+        <rdfs:comment>Tipologia di vernice selezionabile nella configurazione.</rdfs:comment>
+        <rdfs:label>LU-197</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#LU-993 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#LU-993">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Paint"/>
+        <untitled-ontology-9:isExteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasPaintColor>Manufaktur rosso Patagonia</untitled-ontology-9:hasPaintColor>
+        <untitled-ontology-9:hasPaintModel>LU-993</untitled-ontology-9:hasPaintModel>
+        <untitled-ontology-9:hasPaintType>manufaktur</untitled-ontology-9:hasPaintType>
+        <rdfs:comment>Tipologia di vernice selezionabile nella configurazione.</rdfs:comment>
+        <rdfs:label>LU-993</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#PC-P20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#PC-P20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#DrivingAssistant"/>
+        <untitled-ontology-9:isOptionalOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasDrivingAssistantType>Assistenza alla guida Plus</untitled-ontology-9:hasDrivingAssistantType>
+        <rdfs:comment>Guida parzialmente autonoma con sistema di assistenza attivo alla regolazione della distanza DISTRONIC, sistema di assistenza allo sterzo attivo, PRE-SAFE® PLUS e PRE-SAFE® impulse side selezionabile nella configurazione.</rdfs:comment>
+        <rdfs:label>PC-P20</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#PC-P35 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#PC-P35">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Headlights"/>
+        <untitled-ontology-9:isExteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasHeadlightModel>DIGITAL LIGHT</untitled-ontology-9:hasHeadlightModel>
+        <rdfs:comment>DIGITAL LIGHT fari configurabili</rdfs:comment>
+        <rdfs:label>PC-P35</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#PC-PBH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#PC-PBH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#DrivingAssistant"/>
+        <untitled-ontology-9:isOptionalOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasDrivingAssistantType>Remote Parking Package</untitled-ontology-9:hasDrivingAssistantType>
+        <rdfs:comment>Parcheggio automatizzato con sistema assistenza parcheggio Memory, telecamera a 360° e sistema di assistenza attivo al parcheggio con PARKTRONIC selezionabile nella configurazione.</rdfs:comment>
+        <rdfs:label>PC-PBH</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-399 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-399">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Seats"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasSeatOptional>sedili anteriori massaggianti</untitled-ontology-9:hasSeatOptional>
+        <rdfs:comment>Confortevoli sedili Multicontour con funzione di massaggio e supporto lombare regolabile su 4 parametri selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>SA-399</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-401 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-401">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Seats"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasSeatOptional>Sedili climatizzati</untitled-ontology-9:hasSeatOptional>
+        <rdfs:comment>Sedili climatizzati per lato guida e passeggero con riscaldamento e ventilazione selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>SA-401</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-443 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-443">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SteeringWheel"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasSteeringWheelOptional>Volante multifunzione riscaldabile</untitled-ontology-9:hasSteeringWheelOptional>
+        <rdfs:comment>Riscaldamento del volante per un comfort particolare nelle giornate fredde selezionabile nella configurazione</rdfs:comment>
+        <rdfs:comment>Volante sportivo a tre razze in materiale ARTICO con paddle del cambio e gruppi di comandi touch selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>SA-443</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-513 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-513">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#DrivingAssistant"/>
+        <untitled-ontology-9:isOptionalOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasDrivingAssistantType>Speed Limit Assist</untitled-ontology-9:hasDrivingAssistantType>
+        <rdfs:comment>Rileva limiti di velocità, divieti di sorpasso e divieti di accesso attraverso i dati cartografici e della telecamera selezionabile nella configurazione.</rdfs:comment>
+        <rdfs:label>SA-513</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-628 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-628">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#DrivingAssistant"/>
+        <untitled-ontology-9:isOptionalOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasDrivingAssistantType>Fari abbaglianti automatici</untitled-ontology-9:hasDrivingAssistantType>
+        <rdfs:comment>Attivazione e disattivazione automatica dei fari abbaglianti selezionabile nella configurazione.</rdfs:comment>
+        <rdfs:label>SA-628</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-632 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-632">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Headlights"/>
+        <untitled-ontology-9:isExteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasHeadlightModel>Fari anteriori LED e fari posteriori full LED</untitled-ontology-9:hasHeadlightModel>
+        <rdfs:label>SA-632</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-872 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-872">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Seats"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasSeatOptional>Sedili posteriori riscaldabili</untitled-ontology-9:hasSeatOptional>
+        <rdfs:comment>Riscaldamento del sedile a tre livelli per i sedili posteriori esterni selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>SA-872</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-873 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-873">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Seats"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasSeatOptional>Sedili anteriori riscaldabili</untitled-ontology-9:hasSeatOptional>
+        <rdfs:comment>Riscaldamento dei sedili anteriori a tre livelli selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>SA-873</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-891 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-891">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Ambient"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasAmbientLighting>Luci soffuse</untitled-ontology-9:hasAmbientLighting>
+        <rdfs:comment>Luci soffuse &quot;ambient&quot; con 3 zone cromatiche selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>SA-891</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-894 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-894">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Ambient"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasAmbientLighting>Illuminazione di atmosfera</untitled-ontology-9:hasAmbientLighting>
+        <rdfs:comment>Illuminazione di atmosfera a 64 colori, con 10 scenari cromatici e linee luminose dirette illuminate selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>SA-894</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-L3M -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-L3M">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SteeringWheel"/>
+        <untitled-ontology-9:isInteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasSteeringWheelOptional>Volante sportivo multifunzione in materiale ARTICO</untitled-ontology-9:hasSteeringWheelOptional>
+        <rdfs:comment>Volante sportivo a tre razze in materiale ARTICO con paddle del cambio e gruppi di comandi touch selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>SA-L3M</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-R15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-R15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Wheels"/>
+        <untitled-ontology-9:isExteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasDiameter>43,2 cm (17&quot;)</untitled-ontology-9:hasDiameter>
+        <untitled-ontology-9:hasWheelModel>Cerchi in lega a 10 doppie razze</untitled-ontology-9:hasWheelModel>
+        <rdfs:comment>Cerchi in lega da 43,2 cm (17&quot;) a 10 doppie razze configurabile se si sceglie un diametro di 43,2 cm (17&quot;)</rdfs:comment>
+        <rdfs:label>SA-R15</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-R32 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-R32">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Wheels"/>
+        <untitled-ontology-9:isExteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasDiameter>45,7 cm (18&quot;)</untitled-ontology-9:hasDiameter>
+        <untitled-ontology-9:hasWheelModel>Cerchi in lega da 18&quot; a 5 razze</untitled-ontology-9:hasWheelModel>
+        <rdfs:comment>Cerchi in lega da 18&quot; a 5 razze configurabile se si sceglie un diametro di 45,7 cm (18&quot;)</rdfs:comment>
+        <rdfs:label>SA-R32</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-R87 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SA-R87">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Wheels"/>
+        <untitled-ontology-9:isExteriorOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasDiameter>45,7 cm (18&quot;)</untitled-ontology-9:hasDiameter>
+        <untitled-ontology-9:hasWheelModel>Cerchi in lega leggera AMG</untitled-ontology-9:hasWheelModel>
+        <rdfs:comment>Cerchi in lega leggera AMG da 18&quot; configurabile se si sceglie un diametro di 45,7 cm (18&quot;)</rdfs:comment>
+        <rdfs:label>SA-R87</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SP-111 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SP-111">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Safety"/>
+        <untitled-ontology-9:isOptionalOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasSafetyPackage>Pacchetto Sicurezza Base</untitled-ontology-9:hasSafetyPackage>
+        <rdfs:comment>Pacchetto base di dispositivi di sicurezza di serie nell&apos;auto, come avviamento KEYLESS-GO, giubbetto flourescente, airbag, chiamata di emergenza, triangolo di emergenza, e sensore occupazione sedile passeggero selezionabile nella configurazione.</rdfs:comment>
+        <rdfs:label>SP-111</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SP-222 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SP-222">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Safety"/>
+        <untitled-ontology-9:isOptionalOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasSafetyPackage>Pacchetto Sicurezza Intermedio</untitled-ontology-9:hasSafetyPackage>
+        <rdfs:comment>Pacchetto intermedio di dispositivi di sicurezza nell&apos;auto che comprende: pacchetto base + estintore, PRE-SAFE, protezione pedoni e Sidebags posteriori selezionabile nella configurazione.</rdfs:comment>
+        <rdfs:label>SP-222</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SP-333 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#SP-333">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Safety"/>
+        <untitled-ontology-9:isOptionalOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasSafetyPackage>Pacchetto Sicurezza Avanzato</untitled-ontology-9:hasSafetyPackage>
+        <rdfs:comment>Pacchetto avanzato di dispositivi di sicurezza nell&apos;auto che comprende: pacchetto base + pacchetto intermedio + DISTRONIC Plus, PRE-SAFE, Protezione vettura GUARD 360° Plus e Active Lane Change Assist selezionabile nella configurazione.</rdfs:comment>
+        <rdfs:label>SP-333</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#cambio_automatico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#cambio_automatico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Transmission"/>
+        <untitled-ontology-9:isTransmissionOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasTransmissionType>Cambio automatico</untitled-ontology-9:hasTransmissionType>
+        <rdfs:comment>Cambio automatico selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>Cambio automatico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#cambio_manuale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#cambio_manuale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#Transmission"/>
+        <untitled-ontology-9:isTransmissionOf rdf:resource="http://www.semanticweb.org/nicol/ontologies/2024/8/untitled-ontology-9#ClasseCBerlina"/>
+        <untitled-ontology-9:hasTransmissionType>Cambio manuale</untitled-ontology-9:hasTransmissionType>
+        <rdfs:comment>Cambio automatico selezionabile nella configurazione</rdfs:comment>
+        <rdfs:label>Cambio manuale</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
